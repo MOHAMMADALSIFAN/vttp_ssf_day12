@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"
+>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+</head>
+<body>
+<div>
+  <p>Current Time: <span th:text="${CurrentTime}"></span></p>
+  <div th:if= "${currHour lt 12}">
+    <h3>Good Morning!!!</h3>
+  </div>
+  <div th:if= "${currHour ge 12}">
+    <h3>Good Afternoon!!</h3>
+  </div>
+</div>
+  <h1><strong>Images</strong></h1>
+  <img src="\images\flat-holi-festival-illustration_23-2148857940.jpg" alt="Images" width="500px" height="200px">
+</body>
+</html>
